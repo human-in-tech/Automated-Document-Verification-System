@@ -14,7 +14,7 @@ This project is a document verification assistant designed to validate forms for
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **LLM API (Online)**: Google Gemini Pro / Flash
 * **LLM (Offline)**: Mistral 7B / TinyLLaMA in GGUF format via `llama-cpp-python`
@@ -23,7 +23,7 @@ This project is a document verification assistant designed to validate forms for
 
 ---
 
-## 📦 Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 
 ---
 
-## ✅ Run the Application
+## Run the Application
 
 ### Online Version:
 
@@ -77,7 +77,7 @@ streamlit run app.py
 
 ---
 
-## 🧠 Prompt
+## Prompt
 
 > The assistant is guided by a structured prompt that checks for:
 >
@@ -89,7 +89,7 @@ The prompt has to be tweaked as per the requirements.
 ---
 
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
 * [LangChain](https://www.langchain.com/)
 * [FAISS](https://github.com/facebookresearch/faiss)
