@@ -98,4 +98,4 @@ The prompt has to be tweaked as per the requirements.
 
 ---
 
-For setup help or model download instructions, see `MANUAL_offline.md` and `MANUAL_online.md`.
+For setup help or model download instructions, checkout the manuals within local and online model directories.
