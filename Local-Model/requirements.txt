@@ -1,0 +1,15 @@
+# conda install -c conda-forge llama-cpp-python
+# Related to LangChain
+langchain
+langchain-community
+langchain_huggingface
+# langchain_core 
+
+# Extras
+pdfplumber
+streamlit
+
+# Vector store
+faiss-cpu 
+# llama-cpp-python - pip install llama-cpp-python --only-binary :all: --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+sentence-transformers
