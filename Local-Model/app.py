@@ -5,7 +5,7 @@ import pdfplumber
 import re
 from pipeline import build_or_load_retriever, call_rag
 
-# Load the retriever once (on app start)
+# Loading the retriever once (on app start)
 retriever = build_or_load_retriever()
 rag_chain = call_rag(retriever)
 
