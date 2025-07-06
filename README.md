@@ -1,4 +1,4 @@
-# Insurance Proposal Form Verifier
+# Automated Document Verification System
 
 This project is a document verification assistant designed to validate forms for structure and content completeness. It supports both **online** (using model APIs) and **offline** (using local GGUF LLMs) for verification pipelines.
 
