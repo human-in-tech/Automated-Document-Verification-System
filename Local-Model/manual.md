@@ -63,13 +63,13 @@ In `pipeline.py`, make sure the `model_path` give within the function `call_mode
 llm = Llama(model_path="models/mistral-7b-instruct-v0.2.Q4_K_M.gguf", n_ctx=8192)
 ```
 
-To test the model, run:
+To test the model itself, run:
 
 ```bash
 python pipeline.py
 ```
 
-To run the UI:
+To launch the user interface, run :
 
 ```bash
 streamlit run app.py
