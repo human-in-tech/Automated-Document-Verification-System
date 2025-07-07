@@ -39,7 +39,7 @@ def build_or_load_retriever() -> object:
     else:
         print("Building new FAISS retriever...")
         # this is where you upload your document path
-        docs = [Document(page_content=load_and_clean_pdf(r"C:\Users\khyat\OneDrive\Desktop\DRDO\Project\proposal forms\icici proposal form.pdf"))]
+        docs = [Document(page_content=load_and_clean_pdf(r"<form-path-goes-here>"))]
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
         splits = text_splitter.split_documents(docs)
         vectorstore = FAISS.from_documents(documents=splits, embedding=embedding_model)
@@ -75,9 +75,10 @@ def build_prompt(inputs) -> str:
     {inputs['document']}
     """
 
-# llama call
+# model call
+# specify the path of model here
 def call_model(prompt):
-    llm = Llama(model_path=r"C:\Users\khyat\OneDrive\Desktop\DRDO\Project\Local - Prototype\models\mistral-7b-instruct-v0.2.Q4_K_M.gguf", n_ctx=8192)
+    llm = Llama(model_path=r"<path-of-model-here>", n_ctx=8192)
     response = llm(prompt, temperature = 0.4, stop=["</s>"], max_tokens = 1024)
     return response["choices"][0]["text"]
 
